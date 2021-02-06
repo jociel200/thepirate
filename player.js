@@ -78,5 +78,21 @@ var players = [
         price: 4000,
         size: "350 x 520",
         id: 10
+    },
+    {
+        categoria: "html",
+        img: "https://i.postimg.cc/brtVRR2j/modelo-12-html.jpg",
+        model: 11,
+        price: 4000,
+        size: "720 x 720",
+        id: 11
+    },
+    {
+        categoria: "html",
+        img: "https://i.postimg.cc/gcX7dGtB/modelo-13-html.jpg",
+        model: 12,
+        price: 4000,
+        size: "360 x 540",
+        id: 12
     }
 ];
