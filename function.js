@@ -1,87 +1,109 @@
-/*
-var zoomBtn = document.querySelector("#zoom");
-var closeBtn = document.querySelector("#close");
-*/
-var modal = document.querySelector(".jd-modal");
-var container = document.getElementById("container");
-var content = document.getElementById("content");
+var playerNew = document.querySelector(".jd-content-player-new");
+var playerMain = document.querySelector(".jd-content-player");
+var contentModal = document.querySelector(".jd-content-modal");
+var boxModal = document.querySelector(".jd-modal");
+var btn = document.querySelector(".jd-btn-zoom");
 var i = 0;
-var btn;
-var box = '';
-var boxModal = '';
-
-var listPlayers = players.filter(player => player.categoria === 'html');
-console.log(listPlayers.length);
+var j = 0;
+var boxPlayerNew = '';
+var boxPlayer = '';
+var modal = '';
 
 
-if(i < listPlayers.length){
-    console.log("ok!");
-}
+var listPlayerNews = Modelos.filter(modelo => modelo.order === 'new');
 
-var listImg = listPlayers.map(img => img.img);
-var listPrice = listPlayers.map(price => price.price);
-var listModel = listPlayers.map(model => model.model);
-var listSize = listPlayers.map(size => size.size);
-var listId = listPlayers.map(id => id.id);
+while(i < listPlayerNews.length){
+    var imgNew = listPlayerNews[i].img;
+    var modelNew = listPlayerNews[i].model;
+    var priceNew = listPlayerNews[i].price;
+    var sizeNew = listPlayerNews[i].size;
+    var idNew = listPlayerNews[i].id;
 
-while(i < listPlayers.length){
-    var img = listPlayers[i].img;
-    var model = listPlayers[i].model;
-    var price = listPlayers[i].price;
-    var size = listPlayers[i].size;
-    var _id = listPlayers[i].id;
-
-    box =   '<div class="jd-box">'+
-            '<div class="jd-box-img">'+
-            '<img src="'+ img +'">'+
-            '</div>'+
-            '<div class="jd-cod">code: '+ model +'</div>'+
-            '<h2 class="jd-price">$ '+ price +' <sup>xats</sup></h2>'+
-            '<button class="jd-btn-box" id="'+ _id +'">zoom</button>'+
-            '<p class="jd-size">size: '+ size +'</p>'+
-            '</div>';
-    container.innerHTML += box;
+    boxPlayerNew = '<div class="jd-box-player">'+
+                '<div class="jd-box-img-player">'+
+                '<img class="jd-img-player" src="'+ imgNew +'">'+
+                '<span class="jd-new">New PLayer</span>'+
+                '</div>'+
+                '<span class="jd-code">Code: '+ modelNew +'</span>'+
+                '<h1 class="jd-price">$ '+ priceNew +' <sup>xats</sup></h1>'+
+                '<button class="jd-btn-zoom" id="'+ idNew +'">Zoom</button>'+
+                '<p class="jd-size">Size: '+ sizeNew +'</p>'+
+                '</div>';
+            playerNew.innerHTML += boxPlayerNew;
     i++;
-    //console.log(img);
 }
 
-for(var j = 0; j < container.children.length; j++){
-    btn = container.children[j].querySelector(".jd-btn-box");
-    btn.addEventListener('click', onBtnClick);
+for(var i = 0; i < playerNew.children.length; i++){
+    btn = playerNew.children[i].querySelector(".jd-btn-zoom");
+    btn.addEventListener('click', onBtnShow);
+} 
+
+var listPlayer = Modelos.filter(modelo => modelo.order === 'html');
+
+while(j < listPlayer.length){
+    var img = listPlayer[j].img;
+    var model = listPlayer[j].model;
+    var price = listPlayer[j].price;
+    var size = listPlayer[j].size;
+    var id = listPlayer[j].id;
+
+    boxPlayer = '<div class="jd-box-player">'+
+                '<div class="jd-box-img-player">'+
+                '<img class="jd-img-player" src="'+ img +'">'+
+                '</div>'+
+                '<span class="jd-code">Code: '+ model +'</span>'+
+                '<h1 class="jd-price">$ '+ price +' <sup>xats</sup></h1>'+
+                '<button class="jd-btn-zoom" id="'+ id +'">Zoom</button>'+
+                '<p class="jd-size">Size: '+ size +'</p>'+
+                '</div>';
+            playerMain.innerHTML += boxPlayer;
+    j++;
 }
 
-function onBtnClick(ev){
+for(var j = 0; j < playerMain.children.length; j++){
+    btn = playerMain.children[j].querySelector(".jd-btn-zoom");
+    btn.addEventListener('click', onBtnShow);
+}
+
+function onBtnShow(ev){
     var evn = ev.currentTarget.id;
 
-    modalPlayer = players.filter(player => player.id == evn);
-    imgModal = modalPlayer.map(img => img.img);
-    priceModal = modalPlayer.map(price => price.price);
-    modelModal = modalPlayer.map(model => model.model);
-    sizeModal = modalPlayer.map(size => size.size);
+    boxModal.classList.add("jd-show");
 
-    //console.log(evn);
-    modal.classList.add("jd-show");
+    var listModal = Modelos.filter(player => player.id == evn);
+    imgModal = listModal.map(img => img.img);
+    modelModal = listModal.map(model => model.model);
+    priceModal = listModal.map(price => price.price);
+    sizeModal = listModal.map(size => size.size);
 
-    boxModal =  '<div class="jd-box-modal">'+
-                '<h2 class="jd-title-modal">Player html modelo '+ modelModal +'</h2>'+
-                '<button class="jd-btn-close" id="close" onclick="closeModal()">x</button>'+
-                '<div class="jd-player-modal">'+
-                '<div class="jd-box-img-modal">'+
-                '<img src="'+ imgModal +'">'+
-                '</div>'+
-                '<div class="jd-col-modal">'+
-                '<span class="jd-code-modal">Code: <strong>'+ modelModal +'</strong></span>'+
-                '<h1 class="jd-price-modal">Price: $<strong>'+ priceModal +'</strong><sup>xats</sup></h1>'+
-                '<p class="jd-size-modal">Size: <strong>'+ sizeModal +'</strong></p>'+
-                '</div>'+
-                '</div>'+
-                '</div>';
+    modal = '<div class="jd-box-modal">'+
+            '<div class="jd-top-modal">'+
+            '<h1 class="jd-title-modal">Player Modelo '+ modelModal +'</h1>'+
+            '<div class="jd-btn-close" onclick="onBtnClick()"></div>'+
+            '</div>'+
+            '<div class="jd-box-player-modal">'+
+            '<div class="jd-box-img-modal">'+
+            '<img class="jd-img-modal" src="'+ imgModal +'">'+
+            '</div>'+
+            '<span class="jd-item-modal">Modelo: <strong>'+ modelModal +'</strong></span>'+
+            '<span class="jd-item-modal">Price: <strong>'+ priceModal +'</strong><sup>xats</sup></span>'+
+            '<span class="jd-item-modal">Size: <strong>'+ sizeModal +'</strong></span>'+
+            '</div>'+
+            '</div>';
 
-    content.innerHTML = boxModal;
-};
-function closeModal(){
-    modal.classList.remove("jd-show");
-};
+            boxModal.innerHTML = modal;
+
+    console.log("ok");
+}
+
+function onBtnClick(){
+    boxModal.classList.remove("jd-show");
+}
 
 
-//console.log(players);
+
+
+
+
+
+console.log(Modelos.length);
