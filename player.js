@@ -104,7 +104,7 @@ var Modelos = [
         id: 9
     },
 	{
-        order: "new",
+        order: "html",
         img: "https://i.postimg.cc/5yWmdjc1/modelo-11-html.jpg",
         model: 10,
         price: 4000,
