@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XAT HOLA EVENTOS</title>
+    <meta name="author" content="JasonOficial - xat.com/centraldosplayers">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="flipdown.css">
+    <link rel="stylesheet" href="counter.css">
+</head>
+<body>
+    <main class="jd-container">
+        <header class="jd-top">
+            <h1 class="jd-title">Eventos</h1>
+            <h2 class="jd-xat">Xat Hola</h2>
+            <span class="jd-description">Internacional</span>
+        </header>
+        <section class="jd-counter">
+            <div id="flipdown" class="flipdown"></div>
+        </section>
+        <section class="jd-win">
+            <h3>Prêmio</h3>
+            <h4>WIN 500 XATS (5 winners)</h4>
+            <p>
+                We are going to give away 500 xats 💰 to five (5) lucky Club members.
+            </p>
+            <div class="jd-power"></div>
+        </section>
+        <nav class="jd-nav">
+            <a class="jd-btn-nav" href="https://xat.com/hola" target="_blank">HolaXat</a>
+            <a class="jd-btn-nav" href="https://www.facebook.com/HolaXat/" target="_blank">Facebook</a>
+            <a class="jd-btn-nav" href="https://twitter.com/HolaXat" target="_blank">Twitter</a>
+            <a class="jd-btn-nav" href="https://www.instagram.com/holaxat/" target="_blank">Instagram</a>
+            <a class="jd-btn-nav" href="https://forum.xat.com/forum/397-hola/" target="_blank">Group</a>
+        </nav>
+    </main>
+    <footer>&copy; 2021 by JasonOficial xat.com/Centraldosplayers</footer>
+    <script src="flipdown.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var twoDaysFromNow = 1615741200;//(new Date().getTime() / 1000) + (1616371200 * 2) + 1;
+
+            var flipdown = new FlipDown(twoDaysFromNow);
+            flipdown.start();
+
+            flipdown.ifEnded(() => {
+                console.log("Evento Realizado!");
+            });
+        });
+    </script>
+</body>
+</html>
