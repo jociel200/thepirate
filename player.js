@@ -1,4 +1,12 @@
 var Modelos = [
+	{
+        order: "new",
+        img: "https://i.postimg.cc/hPRhTdNw/modelo-16-html.jpg",
+        model: 15,
+        price: 5000,
+        size: "650 x 390",
+        id: 15
+    },
     {
         order: "new",
         img: "https://i.postimg.cc/6p8Cy92y/modelo-15-html.jpg",
@@ -17,19 +25,11 @@ var Modelos = [
     },
     {
         order: "new",
-        img: "https://i.postimg.cc/gcX7dGtB/modelo-13-html.jpg",
+        img: "https://i.postimg.cc/brtVRR2j/modelo-12-html.jpg",
         model: 12,
         price: 4000,
-        size: "360 x 540",
-        id: 12
-    },
-    {
-        order: "new",
-        img: "https://i.postimg.cc/brtVRR2j/modelo-12-html.jpg",
-        model: 11,
-        price: 4000,
         size: "720 x 720",
-        id: 11
+        id: 12
     },
     {
         order: "html",
@@ -110,5 +110,13 @@ var Modelos = [
         price: 4000,
         size: "350 x 520",
         id: 10
+    },
+	{
+        order: "html",
+        img: "https://i.postimg.cc/gcX7dGtB/modelo-13-html.jpg",
+        model: 11,
+        price: 4000,
+        size: "360 x 540",
+        id: 11
     }
 ];
