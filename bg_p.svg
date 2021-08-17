@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="920" height="540.362" viewBox="0 0 920 540.362">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.774" x2="1" y2="0.805" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fe1588"/>
+      <stop offset="1" stop-color="#ffc31d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="0.008" x2="0.535" y2="0.722" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffc61e"/>
+      <stop offset="1" stop-color="#ef3970"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_9" data-name="Grupo 9" transform="translate(-180 -100)">
+    <path id="Interseção_1" data-name="Interseção 1" d="M99-313.481V-765h920v66.435c-19.038-1.322-35.372,5.261-45.157,24.22C940.478-609.7,1060.384-392.828,903.984-553.4S731.946-464.771,571.377-328.183C496.316-264.332,416.483-224.634,329.4-224.637,257.932-224.641,181.571-251.393,99-313.481Z" transform="translate(81 865)" fill="url(#linear-gradient)"/>
+    <path id="Interseção_2" data-name="Interseção 2" d="M99-331.88V-765h920v73.5c-34.417-16.961-68.922-20.647-85,10.5-32,62,83,270-67,116S702-480,548-349c-71.99,61.239-148.557,99.313-232.075,99.309C248.546-249.694,176.645-274.477,99-331.88Z" transform="translate(81 865)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>
