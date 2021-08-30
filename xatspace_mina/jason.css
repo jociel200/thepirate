@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+:root{
+    --font: 'Poppins', sans-serif;
+    --blue-bg: #0A0074;
+    --blue: #FE86C2;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:before, :after{
+    content: '';
+    position: absolute;
+}
+
+body{
+    background:#FBFBFB;
+    min-height:100vh;
+    font-family: var(--font);
+    font-size:16px;
+    overflow-x:hidden;
+}
+
+a, span{
+    display: inline-block;
+    text-decoration:none;
+}
+
+.jd-container{
+    width:1068px;
+    height:auto;
+    margin:0 auto;
+    position:relative;
+}
+
+.jd-header{
+    height:460px;
+    background: linear-gradient(to bottom right, #FE86C2, #0A0074);
+    box-shadow:0 1px #EEE;
+}
+
+.jd-logo-me{
+    padding-top:40px;
+}
+
+.jd-logo-me h1{
+    font-size:3rem;
+    color: var(--blue-bg);
+    line-height:40px;
+}
+
+.jd-logo-me h1 span{
+    font-weight:100;
+    color: #FFF;
+}
+
+.jd-logo-me small{
+    width:62px;
+    height:32px;
+    border-radius:3px;
+    background:#FE86C2;
+    color:var(--blue-bg);
+    text-align:center;
+    line-height:30px;
+    border:solid 1px #ff98cc;
+    display:block;
+    font-size:1.1rem;
+    margin-left:110px;
+}
+
+.jd-content-banner{
+    width:100%;
+    height:294px;
+    background:#fff;
+    position:absolute;
+    top:166px;
+    left:0;
+    border-radius:10px 10px 0 0;
+    overflow:hidden;
+}
+
+.jd-banner{
+    width:100%;
+    height:234px;
+    position:relative;
+    overflow:hidden;
+}
+
+.jd-banner img{
+    position:absolute;
+    display:block;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.jd-banner h1{
+    position:relative;
+    text-align:center;
+    margin-top:20px;
+    color:var(--blue);
+    -webkit-text-stroke: 1px #FFF;
+    -moz-text-stroke: 1px #FFF;
+    text-stroke: 1px #FFF;
+    text-shadow:5px 5px 5px rgba(0,0,0,.5);
+}
+
+.jd-avatar{
+    width:180px;
+    height:180px;
+    background:#FFF;
+    box-shadow:0 0 0 10px white;
+    overflow:hidden;
+    left:60px;
+    bottom:30px;
+    position:absolute;
+}
+
+.jd-avatar img{
+    width:100%;
+}
+
+.jd-user{
+    width:450px;
+    height:140px;
+    background:rgba(255,255,255,.1);
+    position:absolute;
+    top:73px;
+    left:270px;
+    padding:15px;
+    border-radius:3px;
+    -webkit-backdrop-filter: blur(10px);
+    -mox-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color:#FFF;
+}
+
+.jd-user h1{
+    font-weight:300;
+    line-height:36px;
+}
+
+.jd-user p{
+    line-height:16px;
+}
+
+.jd-user a{
+    height:30px;
+    line-height:30px;
+    padding:0 10px;
+    background: var(--blue);
+    margin-top:5px;
+    border-radius:3px;
+    color:#FFF;
+    font-size:.8rem;
+}
+
+.jd-video{
+    width:217px;
+    height:123px;
+    background:#111;
+    right:9.5px;
+    top:9.5px;
+    position:absolute;
+}
+
+.jd-menu{
+    width:auto;
+    height:60px;
+    margin-left:300px;
+}
+
+.jd-menu ul{
+    display:flex;
+    height:60px;
+    align-items:center;
+    gap:30px;
+    list-style:none;
+}
+
+.jd-menu ul li a{
+    background: rgba(0,0,0,.03);
+    padding:5px 10px;
+    border-radius:3px;
+    color: var(--blue);
+    transition: .2s;
+}
+
+.jd-menu ul li a:hover{
+    background: var(--blue);
+    color: #FFF;
+}
+
+.jd-title{
+    font-weight:200;
+    text-align:center;
+    line-height:80px;
+    color:var(--blue);
+    border-bottom: solid 1px var(--blue);
+}
+
+.jd-content-cart{
+    width:100%;
+    margin:40px;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.jd-cart{
+    width:120;
+    height:150px;
+    background:#FFF;
+    padding:20px 10px 0 10px;
+    box-shadow:1px 1px 1px rgba(0,0,0,.05);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.jd-box-gif{
+    width:80px;
+    height:80px;
+    overflow:hidden;
+    margin-bottom:16px;
+}
+
+.jd-box-gif img{
+    width:100%;
+}
+
+.jd-cart span{
+    display:block;
+    text-align:center;
+    line-height:30px;
+    box-shadow:0 1px rgba(0,0,0,.05) inset;
+    color: var(--blue);
+    font-size:.85rem;
+}
+
+.jd-footer{
+    line-height:100px;
+    text-align:center;
+    background: var(--blue-bg);
+    color:white;
+    font-size:.8rem;
+}
