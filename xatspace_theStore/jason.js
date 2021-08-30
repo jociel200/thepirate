@@ -51,8 +51,8 @@
     $("#radio-days-c").text(block_c_r.day)
     $("#radio-limit-c").text(block_c_r.limit)
 
-    $("#announce-xat").text(announce.xats)
-    $("#announce-value").text(announce.value)
+    $("#announce-xat").text(announce.value)
+    $("#announce-value").text(announce.xats)
 
     $("#whatsapp-number").text(whatsapp_numer.number)
 })();
