@@ -2,7 +2,7 @@
 
 
 /////////////////BANNERS//////////////////////////
-
+    //////////////IMG BANNER SIZE 1600x650 PIXELS/////////////////
 var banner_one = {
     img: "https://i.postimg.cc/sj5ycYvt/bg-player.jpg",
     title: "Faça Parte Você Também",
