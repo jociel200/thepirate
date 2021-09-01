@@ -1,6 +1,14 @@
 var Modelos = [
 	{
         order: "new",
+        img: "https://i.postimg.cc/P5fBdzfn/modelo-17-html-img-1.jpg",
+        model: 16,
+        price: 5000,
+        size: "830 x 600",
+        id: 16
+    },
+	{
+        order: "new",
         img: "https://i.postimg.cc/hPRhTdNw/modelo-16-html.jpg",
         model: 15,
         price: 5000,
@@ -24,7 +32,7 @@ var Modelos = [
         id: 13
     },
     {
-        order: "new",
+        order: "html",
         img: "https://i.postimg.cc/brtVRR2j/modelo-12-html.jpg",
         model: 12,
         price: 4000,
