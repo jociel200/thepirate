@@ -103,12 +103,12 @@
             link: "https://xat.me/ELoh"
         },
         {
-            name: "Maah",
+            name: "Tia",
             link: "https://xat.me/sinistra16"
         },
         {
-            name: "Vinny",
-            link: "https://xat.me/xViniciuss"
+            name: "Paula",
+            link: "https://xat.me/anapauIa"
         },
         {
             name: "Sun",
