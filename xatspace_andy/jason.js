@@ -107,7 +107,7 @@
             link: "https://xat.me/sinistra16"
         },
         {
-            name: "Paula",
+            name: "Mana",
             link: "https://xat.me/anapauIa"
         },
         {
