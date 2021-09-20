@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="221" height="142.35" viewBox="0 0 221 142.35">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffaf6a"/>
+      <stop offset="1" stop-color="#ff3f6e"/>
+    </linearGradient>
+  </defs>
+  <path id="Interseção_5" data-name="Interseção 5" d="M29.5,399.5V257.314c72.923-3,83.88,36.066,104.5,56.686,22,22,29,33,63,8,13.46-9.9,33.818-5.218,53.5,4.046V399.5Z" transform="translate(-29.5 -257.15)" fill="url(#linear-gradient)"/>
+</svg>
