@@ -138,6 +138,10 @@
             name: "Dimi",
             link: "https://xat.me/Dimittrius"
         },
+        {
+            name: "Nando",
+            link: "https://xat.me/fernando0805"
+        }
     ]
 
     var container = document.querySelector(".jd-col-friend");
