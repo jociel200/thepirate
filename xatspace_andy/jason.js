@@ -135,7 +135,7 @@
             link: "https://xat.me/iThiago000"
         },
         {
-            name: "Dimi",
+            name: "Primo Dimi",
             link: "https://xat.me/Dimittrius"
         },
         {
