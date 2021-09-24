@@ -103,7 +103,7 @@
             link: "https://xat.me/fernando0805"
         },
         {
-            name: "Mana",
+            name: "Mana Eloh",
             link: "https://xat.me/ELoh"
         },
         {
