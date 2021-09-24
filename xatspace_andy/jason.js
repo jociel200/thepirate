@@ -137,6 +137,10 @@
         {
             name: "Dimi",
             link: "https://xat.me/Dimittrius"
+        },
+        {
+            name: "Tia Maah",
+            link: "https://xat.me/YouAreMySun"
         }
     ]
 
