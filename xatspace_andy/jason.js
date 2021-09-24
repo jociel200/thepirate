@@ -139,7 +139,7 @@
             link: "https://xat.me/Dimittrius"
         },
         {
-            name: "Tia Maah",
+            name: "Sun",
             link: "https://xat.me/YouAreMySun"
         }
     ]
