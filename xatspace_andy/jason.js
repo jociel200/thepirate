@@ -99,20 +99,20 @@
 
     var friend = [
         {
+            name: "Amor",
+            link: "https://xat.me/fernando0805"
+        },
+        {
             name: "Mana",
             link: "https://xat.me/ELoh"
         },
         {
-            name: "Tia",
+            name: "Tia Maah",
             link: "https://xat.me/sinistra16"
         },
         {
-            name: "Mana",
+            name: "Tia Paula",
             link: "https://xat.me/anapauIa"
-        },
-        {
-            name: "Sun",
-            link: "https://xat.me/YouAreMySun"
         },
         {
             name: "Morgana",
@@ -137,10 +137,6 @@
         {
             name: "Dimi",
             link: "https://xat.me/Dimittrius"
-        },
-        {
-            name: "Nando",
-            link: "https://xat.me/fernando0805"
         }
     ]
 
