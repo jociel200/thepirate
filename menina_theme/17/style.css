@@ -1,6 +1,6 @@
 body{
-    background:repeating-linear-gradient(0deg, rgba(255,255,255,.1) 1px, transparent 2px, transparent 6px),
-        repeating-linear-gradient(90deg, rgba(255,255,255,.2) 1px, transparent 2px, transparent 6px),
+    background:repeating-linear-gradient(0deg, rgba(255,255,255,.1) 1px, rgba(255,255,255,.1) 2px, transparent 2px, transparent 6px),
+        repeating-linear-gradient(90deg, rgba(255,255,255,.2) 1px, rgba(255,255,255,.1) 2px, transparent 2px, transparent 6px),
         radial-gradient(#fa9fb5, #ae017e);
 }
 /*---------CSS=-BY-JASON-DESIGN-----------*/
