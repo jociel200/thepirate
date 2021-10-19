@@ -35,5 +35,11 @@ var friends = [
         user: 'Mistynha',
         url: 'Mistynha',
         img: 'https://i.postimg.cc/7ZCznBCz/misty.jpg'
+    },
+    {
+        name: 'Prima DK',
+        user: 'DkoficiaLangeL',
+        url: 'DK',
+        img: 'https://i.postimg.cc/8CJYDWtW/dk.jpg'
     }
 ];
