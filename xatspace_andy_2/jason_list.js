@@ -38,8 +38,8 @@ var friends = [
     },
     {
         name: 'Prima DK',
-        user: 'DkoficiaLangeL',
-        url: 'DK',
+        user: 'DK',
+        url: 'DkoficiaLangeL',
         img: 'https://i.postimg.cc/8CJYDWtW/dk.jpg'
     }
 ];
