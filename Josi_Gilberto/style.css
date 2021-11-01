@@ -217,7 +217,6 @@ i{
     right:50px;
     bottom:50px;
     cursor:pointer;
-    z-index:1000;
 }
 
 .btn__sound:before{
@@ -453,6 +452,130 @@ footer{
     background:#000;
 }
 
+.btn__confirm{
+    width:280px;
+    height:50px;
+    border:none;
+    outline:none;
+    font-family:var(--font-1);
+    color:#FFF;
+    background:#000;
+    font-size:2rem;
+    border-radius:4px;
+    margin-left:calc(50% - 140px);
+    cursor:pointer;
+}
+
+.box__modal{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,.9);
+    top:0;
+    left:0;
+    z-index:1000000000;
+    opacity:0;
+    visibility:hidden;
+    transition:.5s;
+}
+
+.box__modal.show{
+    opacity:1;
+    visibility:visible;
+}
+
+.btn__close{
+    position:absolute;
+    width:40px;
+    height:40px;
+    top:40px;
+    right:40px;
+    cursor:pointer;
+}
+
+.btn__close:before,
+.btn__close:after{
+    width:40px;
+    height:2px;
+    background:#FFF;
+    top:calc(50% - 20px);
+    left:calc(50% - 1px);
+}
+
+.btn__close:before{
+    transform:rotate(45deg);
+}
+
+.btn__close:after{
+    transform:rotate(-45deg);
+}
+
+.modal{
+    width:500px;
+    height:480px;
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background:#FFF;
+    color:#000;
+    padding:20px;
+    border-radius:6px;
+    font-family:var(--font-1);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    opacity:0;
+}
+
+.top h2{
+    text-align:center;
+    font-size:1.8rem;
+    font-weight:300;
+}
+
+.modal ul{
+    margin-top:20px;
+}
+
+.modal ul li span{
+    height:32px;
+    line-height:32px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.modal h3{
+    text-align:center;
+    font-size:2.5rem;
+}
+
+.modal ul li i{
+    width:32px;
+    height:32px;
+    display:flex;
+}
+
+.box__bottom{
+    width:100%;
+    display:flex;
+    padding-top:10px;
+    border-top:solid 1px rgba(0,0,0,.08);
+}
+
+.box__bottom strong{
+    font-size:3rem;
+}
+
+.box__bottom p{
+    font-size:1.8rem;
+    padding-left:10px;
+}
+
 @media screen and (max-width:900px){
     .letter__box{
         font-size:3rem;
@@ -469,7 +592,7 @@ footer{
     }
 
     .texto__box{
-        font-size:1.8rem;
+        font-size:1.3rem;
     }
 
     .title:before,
@@ -509,6 +632,14 @@ footer{
     .group__date:nth-child(1),
     .group__date:nth-child(2){
         border-right:none;
+    }
+
+    .modal{
+        width:90%;
+        height:auto;
+    }
+    .top h1{
+        text-align:center;
     }
 }
 

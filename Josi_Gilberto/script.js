@@ -54,6 +54,27 @@
           
       }, 1000);
 
+      $(".btn__confirm").on('click', () => {
+          $(".box__modal").addClass("show");
+
+          setTimeout(() => {
+            $(".modal").animate({
+                "top":"50%",
+                "opacity":"1"
+            }, 500)
+          }, 500)
+      })
+
+      $(".btn__close").on('click', () => {
+          $(".modal").animate({
+              "top":"30%",
+              "opacity":"0"
+          }, 500, function() {
+              $(".modal").css({"top":"70%"})
+              $(".box__modal").removeClass("show")
+          })
+      })
+
     
       var audio = new Audio();
       var source = 'ana_vilela.mp3';
