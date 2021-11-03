@@ -36,16 +36,14 @@
                         <span>Everything is possible with you</span>
                     </div>
                 </div>
-                <div id="btn-3" class="jd-item" data-page="forum">
-                    <a href="https://forum.xat.com/profile/45505/" target="_blank">
-                        <img src="https://i.postimg.cc/x8QwK92d/menu-04.jpg" />
-                        <span class="jd-icon"><i class="fas fa-comment-alt"></i></span>
-                        <div class="jd-inner-item">
-                            <i class="fas fa-comment-alt"></i>
-                            <h5>Forum</h5>
-                            <span>Forum xat.com profile</span>
-                        </div>
-                    </a>
+                <div id="btn-3" class="jd-item" data-page="playlist">
+                    <img src="https://i.postimg.cc/x8QwK92d/menu-04.jpg" />
+                    <span class="jd-icon"><i class="fas fa-music"></i></span>
+                    <div class="jd-inner-item">
+                        <i class="fas fa-music"></i>
+                        <h5>Playlist</h5>
+                        <span>My favorite songs</span>
+                    </div>
                 </div>
                 <div id="btn-4" class="jd-item" data-page="chat">
                     <a href="https://xat.com/centraldosplayers" target="_blank">
@@ -70,6 +68,7 @@
                     <ul class="jd-item-menu">
                         <li class="jd-btn-menu" data-page="about"><span>About</span></li>
                         <li class="jd-btn-menu" data-page="love"><span>Love</span></li>
+                        <li class="jd-btn-menu" data-page="playlist"><span>Playlist</span></li>
                         <li><a class="jd-btn-chat" href="https://xat.com/centraldosplayers" target="_blank"><span>Chat</span></a></li>
                         <li><a class="jd-btn-chat" href="https://centraldosplayers.github.io/bg/" target="_blank"><span>Players</span></a></li>
                         <li><span>Útils</span>
@@ -93,7 +92,7 @@
                                 <li>xat iD: <strong>1202</strong></li>
                             </ul>
                             <a href="https://xat.com/centraldosplayers" target="_blank"><i class="fas fa-angle-double-right"></i><span>xat.com/centraldosplayers</span></a>
-                            <a href="https://centraldosplayers.github.io/bg/" target="_blank"><i class="fas fa-angle-double-right"></i><span>Players</span></a>
+                            <a href="https://" target="_blank"><i class="fas fa-angle-double-right"></i><span>Players</span></a>
                         </div>
                         <div class="jd-col-page right">
                             <div class="jd-box-img">
@@ -168,6 +167,78 @@
                             </ul>
                         </div>
                     </div>
+                    <div id="playlist" class="jd-page">
+                        <div class="jd-col-page left pl">
+                            <div class="jd-box-cover">
+                                <div class="jd-cover"></div>
+                            </div>
+                            <div class="jd-track-now">
+                                <span id="track-now">All Of Me - John Legend</span>
+                            </div>
+                            <div class="jd-box-played">
+                                <div class="jd-history-song">
+                                    <div class="jd-history-group">
+                                        <div class="jd-history-cover">
+                                            <div id="last-cover" class="jd-small-cover last"></div>
+                                        </div>
+                                        <span>Last Played</span>
+                                        <p id="last-song-title">All Of Me</p>
+                                    </div>
+                                    <div class="jd-history-group">
+                                        <div class="jd-history-cover">
+                                            <div id="next-cover" class="jd-small-cover next"></div>
+                                        </div>
+                                        <span>Next To Play</span>
+                                        <p id="next-song-title">All Of Me</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="jd-box-volume">
+                                <span class="jd-mute"><i id="icon-vol" class="fas fa-volume-up"></i></span>
+                                <div class="jd-box-bar-vol">
+                                    <div class="jd-bar-vol"><div class="jd-progress-vol"></div></div>
+                                    <input type="range" max="1" value="0.5" step="0.01" class="jd-slider-vol" id="volume">
+                                </div>
+                                <span class="jd-txt-vol">50%</span>
+                            </div>
+                        </div>
+                        <div class="jd-col-page right pl">
+                            <span class="jd-on-off">Paused...</span>
+                            <div class="jd-controll-pl">
+                                <div class="jd-top-controll">
+                                    <div class="jd-controll-left">
+                                        <span class="jd-reload"><i class="fas fa-redo"></i></span>
+                                        <span class="jd-play-pause"><i id="play" class="fas fa-play"></i></span>
+                                    </div>
+                                    <div class="jd-controll-center">
+                                        <div class="jd-bar-seek"><div class="jd-progress-seek"></div></div>
+                                        <input type="range" class="jd-slider-seek" id="seek" value="0">
+                                    </div>
+                                    <div class="jd-controll-right">
+                                        <span class="jd-current-time"><span class="jd-current-timing">00:00</span>  /  <span class="jd-timing">00:00</span></span>
+                                    </div>
+                                </div>
+                                <div class="jd-controll-bottom">
+                                    <span class="jd-prev"><i class="fas fa-angle-double-left"></i></span>
+                                    <span class="jd-next"><i class="fas fa-angle-double-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="jd-box-list">
+                                <ul class="jd-list">
+                                    <!--<li class="jd-list-group">
+                                        <span class="jd-order">01</span>
+                                        <span class="jd-track-list">All Of Me - John Legend</span>
+                                        <span class="jd-total-current">03:35</span>
+                                    </li>
+                                    <li class="jd-list-group">
+                                        <span class="jd-order">02</span>
+                                        <span class="jd-track-list">Dez Corações - Marília Mendonça</span>
+                                        <span class="jd-total-current">04:12</span>
+                                    </li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
             <section class="jd-slider-content">
@@ -221,28 +292,17 @@
         </div>
 
         <footer class="jd-footer">
-            <div class="jd-container">
-                <div class="jd-col-footer">
-                    <div class="jd-dev"></div>
-                    <p>
-                        Want to have a xatspace like that?<br>
-                        /f1202 add me and call in private.
-                    </p>
-                </div>
-                <div class="jd-group-sound">
-                    <div class="jd-playing">
-                        <div class="jd-track">Dez Corações - Marília Mendonça</div>
-                    </div>
-                    <div class="jd-controll">
-                        <span class="jd-txt">Sound Off</span>
-                        <i id="sound" class="fas fa-volume-down"></i>
-                    </div>
-                </div>
+            <div class="jd-container footer">
+                <span>JasonOficial - xatspace Designer</span>
+                <a href="https://forum.xat.com/profile/45505/" target="_blank">Forum</a>
             </div>
         </footer>
-    <canvas id="canvas"></canvas>
+
+        <canvas id="canvas"></canvas>
     </div>
 
+    <script src="jason_list.js"></script>
+    <script src="jason_player.min.js"></script>
     <script src="jason_script.min.js"></script>
 </body>
 </html>
