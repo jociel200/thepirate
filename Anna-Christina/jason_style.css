@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Cookie&family=Great+Vibes&family=Norican&family=Passions+Conflict&family=Praise&family=Roboto+Slab:wght@200;400;600&family=Sacramento&display=swap');
+
+:root{
+    --font-1: 'Sacramento', cursive;
+    --font-2: 'Comforter Brush', cursive;
+    --font-3: 'Cookie', cursive;
+    --font-4: 'Great Vibes', cursive;
+    --font-5: 'Norican', cursive;
+    --font-6: 'Praise', cursive;
+    --font-7: 'Roboto Slab', serif;
+    --color-base: #CBB694;
+    --red: #D11308;
+    --bg: #FDFEFC;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:before, :after{
+    content: '';
+    position: absolute;
+}
+
+body{
+    font-family: var(--font-7);
+    font-size: 16px;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background:var(--bg);
+    color:var(--color-base);
+}
+
+a, span{
+    display: inline-block;
+}
+
+a{
+    text-decoration: None;
+}
+
+ul{
+    list-style: none;
+}
+
+.jd-container-fluid{
+    border-bottom:solid 120px #222;
+}
+
+.container{
+    width:96%;
+    max-width:1068px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.topo,
+.middle, 
+.bottom{
+    width:100%;
+    height:auto;
+    padding-top:50px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.col-left, 
+.col-right{
+    width:50%;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.col-left.topo h1{
+    color:var(--red);
+    font-family:var(--font-1);
+    font-size:4rem;
+    width:100%;
+}
+
+.col-left.topo h2{
+    width:100%;
+    font-size:2rem;
+    text-align:right;
+    text-transform:uppercase;
+    font-weight:400;
+}
+
+.col-left.topo img{
+    width:420px;
+    margin-top:30px;
+}
+
+.col-left.topo h1:nth-of-type(2){
+    text-align:center;
+}
+
+.date{
+    width:auto;
+    max-width:358px;
+    height:auto;
+}
+
+.date.top h1,
+.date.bottom h1{
+    color:var(--color-base);
+    font-family:var(--font-7);
+    font-size:2rem;
+    text-align:center;
+}
+
+.date.top{
+    margin-top:40px;
+}
+
+.date span,
+.date small{
+    display:block;
+    text-align:center;
+    font-size:1.4rem;
+}
+
+.desc{
+    width:100%;
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+.desc:before,
+.desc:after{
+    width:80%;
+    height:1px;
+    background:var(--color-base);
+    left:10%;
+}
+
+.desc:before{
+    top:0;
+}
+
+.desc:after{
+    top:100%;
+}
+
+.col-left.topo .desc p,
+.col-left.bottom .desc p,
+.col-right.bottom .desc p{
+    text-align:center;
+}
+
+.col-right.topo, 
+.col-right.middle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.col-right.topo img, 
+.col-right.middle img{
+    width:100%;
+}
+
+.col-left.middle{
+    width:70%;
+    font-size:1.4rem;
+}
+
+.col-right.middle{
+    width:30%;
+}
+
+.title{
+    text-align:center;
+    width:100%;
+    color:var(--red);
+    font-family:var(--font-1);
+    font-size:4rem;
+    position:relative;
+}
+
+.title:after{
+    width:50px;
+    height:5px;
+    background:var(--color-base);
+    left:calc(50% - 25px);
+    top:80%;
+}
+
+.col-left.bottom:after{
+    width:1px;
+    height:100px;
+    right:0;
+    top:calc(50% - 50px);
+    background:var(--color-base);
+}
+
+.date.bottom h1{
+    font-size:1.5rem;
+    width:100%;
+}
+
+.date.bottom span,
+.date.bottom small{
+    font-size:1.3rem;
+    font-weight:400;
+    line-height:36px;
+    display:block;
+    text-align:center;
+    width:100%;
+}
+
+.bottom{
+    padding-bottom:50px;
+}
+
+@media screen and (max-width:800px){
+    .col-left.topo,
+    .col-right.topo{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:580px){
+    .col-left.middle,
+    .col-right.middle{
+        width:100%;
+    }
+
+    .col-left.middle .message{
+        width:100%;
+        padding:0 20px;
+    }
+}
+
+@media screen and (max-width:470px){
+    .col-left.bottom, 
+    .col-right.bottom{
+        width:100%;
+    }
+}
