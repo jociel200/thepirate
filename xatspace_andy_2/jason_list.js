@@ -25,10 +25,10 @@ var friends = [
         img: 'https://i.postimg.cc/y6P0134D/anneh.jpg'
     },
     {
-        name: 'Primo Dimi',
-        user: 'Dimi',
-        url: 'Dimittrius',
-        img: 'https://i.postimg.cc/vHZfc8b3/dimi.jpg'
+        name: 'Tio Nicolas',
+        user: 'Nicolas',
+        url: 'iNicoLas',
+        img: 'https://i.postimg.cc/Pxt9f27f/and-img.jpg'
     },
     {
         name: 'Mana Misty',
