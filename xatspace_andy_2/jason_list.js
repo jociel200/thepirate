@@ -41,5 +41,17 @@ var friends = [
         user: 'DK',
         url: 'DkoficiaLangeL',
         img: 'https://i.postimg.cc/8CJYDWtW/dk.jpg'
+    },
+    {
+        name: 'Mana Fran',
+        user: 'Fran',
+        url: 'iFrancinny',
+        img: 'https://i.postimg.cc/VNtbVn7c/franciny.jpg'
+    },
+    {
+        name: 'Mano Miguel',
+        user: 'Miguel',
+        url: 'especiaL1sa',
+        img: 'https://i.postimg.cc/FRQJ5zqk/miguel.jpg'
     }
 ];
