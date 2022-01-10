@@ -15,7 +15,7 @@ var friends = [
     {
         name: 'Tia Paula',
         user: 'Ana Paula',
-        url: 'anapaula',
+        url: 'anapauia',
         img: 'https://i.postimg.cc/dVzyH8dx/paula.jpg'
     },
     {
