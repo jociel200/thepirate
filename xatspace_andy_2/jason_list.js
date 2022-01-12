@@ -47,11 +47,5 @@ var friends = [
         user: 'Fran',
         url: 'iFrancinny',
         img: 'https://i.postimg.cc/VNtbVn7c/franciny.jpg'
-    },
-    {
-        name: 'Mano Miguel',
-        user: 'Miguel',
-        url: 'especiaL1sa',
-        img: 'https://i.postimg.cc/FRQJ5zqk/miguel.jpg'
     }
 ];
