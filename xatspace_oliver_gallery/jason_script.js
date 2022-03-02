@@ -4,30 +4,32 @@
     var i = 0;
     
     var box = '';
+    var bg = $(".jd-gallery").attr("data-screen");
+    console.log(bg)
 
     function initBgs(){
 
-        $(".jd-title").html('Galeria de Fundos');
-
-        var listModels = modelos.filter(modelo => modelo.type === 'background');
-
-        while(i < listModels.length){
-
-            _img = listModels[i].img;
-
-            box = `<div class="jd-box-img">\
-                        <img src="${_img}">\
-                        <a href="${_img}" target="_blank"><i class="bx bx-zoom-in"></i></a>\
-                    </div>`;
-
-            content.innerHTML += box;
-
-            i++;
-        }
-
+        $(".jd-title").html('Home')
+        
+        $(".box-home").css({
+            "background-image":"url('"+bg+"')",
+            "background-size":"cover"
+        })
     }
 
     initBgs();
+
+    $("#home").on('click', function(){
+
+        $(".jd-container").html("");
+
+        $(".jd-title").html("Home");
+
+        content.innerHTML = '<div class="box-home" style="background-image:url('+bg+')"></div>';
+
+        $(".jd-container").html(content);
+
+    })
     
     $("#pcb").on('click', function(){
 

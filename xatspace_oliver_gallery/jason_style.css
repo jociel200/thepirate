@@ -49,8 +49,8 @@ ul{
     background: #9187ff;
     border-radius: 3px;
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 100px;
+    left: 10px;
     z-index: 10;
     box-shadow: 10px 10px 10px rgba(0,0,0,.5);
     cursor: pointer;
@@ -317,4 +317,10 @@ ul{
 
 .jd-box-img a:hover i{
     transform: scale(1);
+}
+
+.box-home{
+    width: 728px;
+    height: 486px;
+    background: #242d3c; 
 }
