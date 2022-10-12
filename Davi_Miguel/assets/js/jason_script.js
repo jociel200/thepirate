@@ -13,7 +13,7 @@
       });
 
       var audio = new Audio();
-      var source = '../assets/media/aleluia.mp3';
+      var source = 'aleluia.mp3';
   
       audio.volume = 0.5;
       audio.autoplay = true;
