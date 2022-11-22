@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Testando Api</title>
+      <style>
+            *{
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+            }
+
+            body{
+                  background: #222;
+                  color: white;
+                  font-size: 16px;
+                  font-family: sans-serif;
+                  min-height: 100vh;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+            }
+
+            .me_xatspace{
+                  display: flex;
+                  padding: 4rem;
+                  flex-direction: column;
+                  gap: 1rem;
+                  align-items: center;
+            }
+
+            .avatar{
+                  width: 200px;
+                  height: 200px;
+                  border-radius: 50%;
+                  overflow: hidden;
+            }
+
+            .avatar img{
+                  width: 100%;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+            }
+
+      </style>
+</head>
+<body>
+      
+      <div class="me_xatspace">
+            <div class="avatar">
+                  <img src="" alt="" class="avatar_img" />
+            </div>
+            <h2 class="username"></h2>
+            <span class="status"></span>
+            <strong class="birthday"></strong>
+            <p class="description"></p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+      </div>
+      
+      <script src="./jquery-3.6.0.min.js"></script>
+      <script>
+
+            var proxy = "https://api.allorigins.win/raw?url=";
+            var url = "https://me.xatgif.com/api/me/jason"; 
+
+            const me = fetch(proxy + url)
+            .then(response => {
+                  return response.json();
+            })
+            .then(result => {
+                  inforData(result.user["infordata"]);
+                  showVideo(result.user["videos"]);
+            })
+            .catch(error => {
+                  console.log('error ', error);
+            });
+
+            function inforData(data){
+                  $(".avatar_img").attr("src", data.avatar);
+                  $(".username").text(data.name);
+                  $(".birthday").text(data.birthday);
+                  $(".description").text(data.about);
+            }
+
+            function showVideo(data){
+                 url = "https://www.youtube.com/embed/" + data[0].id_video + "";
+                  $(".video").attr("src", url);
+            }
+
+      </script>
+</body>
+</html>
