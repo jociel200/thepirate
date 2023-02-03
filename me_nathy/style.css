@@ -380,7 +380,6 @@ span{
 
 .social{
     position: absolute;
-    z-indeX: 2;
     display: flex;
     justify-content: flex-end;
     padding: 10px;
